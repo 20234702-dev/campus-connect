@@ -1,0 +1,151 @@
+.header {
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+/* Logo */
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logoIconPairs {
+  position: relative;
+  display: flex;
+  color: var(--color-primary);
+  width: 32px;
+  height: 32px;
+}
+
+.iconSearch {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.iconPin {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: var(--color-accent);
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.brandSubtitle {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Nav links */
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+  }
+}
+
+.navLink {
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width var(--transition-normal);
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: #E5E7EB;
+  margin: 0 0.5rem;
+}
+
+/* Buttons */
+.reportBtn {
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.reportBtn:hover {
+  background-color: #d9911e;
+  transform: translateY(-1px);
+}
+
+.loginBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 0.5rem 0.5rem;
+}
+
+.loginBtn:hover {
+  color: var(--color-accent);
+}
+
+/* Mobile */
+.mobileMenuBtn {
+  display: flex;
+  color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}

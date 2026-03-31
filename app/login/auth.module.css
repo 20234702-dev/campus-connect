@@ -1,0 +1,136 @@
+.pageWrapper {
+  min-height: calc(100vh - 72px - 200px); /* viewport - navbar - approx footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--color-bg);
+}
+
+.authCard {
+  background-color: white;
+  width: 100%;
+  max-width: 440px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+.forgotLink {
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 2.75rem;
+  border: 1px solid #D1D5DB;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  color: var(--color-text-main);
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(26, 43, 95, 0.1);
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.875rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.submitBtn:hover {
+  background-color: #111D42;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid #E5E7EB;
+  padding-top: 1.5rem;
+}
+
+.registerLink {
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.registerLink:hover {
+  text-decoration: underline;
+}

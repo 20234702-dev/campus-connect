@@ -1,0 +1,24 @@
+.card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Padding amounts */
+.padding-none { padding: 0; }
+.padding-sm { padding: 1rem; }
+.padding-md { padding: 1.5rem; }
+.padding-lg { padding: 2.5rem; }
+
+/* Shadows */
+.shadow-none { box-shadow: none; }
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* Border */
+.bordered {
+  border: 1px solid #E5E7EB;
+}

@@ -1,0 +1,210 @@
+.pageWrapper {
+  padding: 3rem 1.5rem 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.title {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+}
+
+.newReportBtn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  display: inline-block;
+  text-align: center;
+}
+
+.newReportBtn:hover {
+  background-color: #111D42;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.tableContainer {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.table th {
+  background-color: #F9FAFB;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #E5E7EB;
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.table tbody tr:hover {
+  background-color: #F9FAFB;
+}
+
+.rowResolved {
+  opacity: 0.7;
+  background-color: #F9FAFB;
+}
+
+.titleCell {
+  font-weight: 500;
+}
+
+.itemLink {
+  color: var(--color-text-main);
+}
+
+.itemLink:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.typeBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.typeLost {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+.typeFound {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+.dateCell {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusActive {
+  background-color: #E0E7FF;
+  color: #4338CA;
+}
+
+.statusResolved {
+  background-color: #D1FAE5;
+  color: #047857;
+}
+
+.messagesBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.hasMessagesIcon { color: var(--color-accent); }
+.hasMessagesText { color: var(--color-text-main); }
+.noMessagesIcon { color: #D1D5DB; }
+.noMessagesText { color: #9CA3AF; }
+
+.actionsColumn {
+  text-align: right;
+  width: 140px;
+}
+
+.actionsCell {
+  text-align: right;
+}
+
+.actionGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.actionBtn {
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  color: #9CA3AF;
+  transition: all var(--transition-fast);
+}
+
+.actionResolve:hover { color: var(--color-success); background-color: #ECFDF5; }
+.actionEdit:hover { color: var(--color-primary); background-color: #EFF6FF; }
+.actionDelete:hover { color: var(--color-danger); background-color: #FEF2F2; }
+
+/* Empty State */
+.emptyState {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background-color: white;
+  border-radius: var(--radius-lg);
+  color: var(--color-text-muted);
+  box-shadow: var(--shadow-sm);
+  margin-top: 2rem;
+}
+
+.emptyLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.emptyLink:hover {
+  text-decoration: underline;
+}
